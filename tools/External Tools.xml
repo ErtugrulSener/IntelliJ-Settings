@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="Codepage 65001" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="chcp" />
+      <option name="PARAMETERS" value="65001" />
+      <option name="WORKING_DIRECTORY" value="C:/Windows/System32/" />
+    </exec>
+  </tool>
+</toolSet>
