@@ -14,6 +14,9 @@
   </action>
   <action id="EditorDeleteLine" />
   <action id="EditorSelectWord" />
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="alt e" />
+  </action>
   <action id="SmartSelect" />
   <action id="TableResult.GrowSelection" />
   <action id="UsageFiltering.WriteAccess" />
