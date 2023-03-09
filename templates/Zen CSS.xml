@@ -1,0 +1,8 @@
+<templateSet group="Zen CSS">
+  <template name="cnt:c" value="content:counter($VAR0$);" description="content:counter(...);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+</templateSet>
