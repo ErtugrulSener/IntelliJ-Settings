@@ -3,6 +3,8 @@
     <option name="pluginIds">
       <list>
         <option value="com.intellij.javaee.jpa" />
+        <option value="com.netflix.graphql.dgs.intellijplugin" />
+        <option value="com.intellij.spring.websocket" />
       </list>
     </option>
   </component>
