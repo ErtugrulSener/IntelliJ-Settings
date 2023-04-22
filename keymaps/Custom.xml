@@ -6,6 +6,9 @@
     <keyboard-shortcut first-keystroke="ctrl z" />
   </action>
   <action id="ActivateBookmarksToolWindow" />
+  <action id="ActivateBuildToolWindow">
+    <keyboard-shortcut first-keystroke="alt 5" />
+  </action>
   <action id="ActivateDebugToolWindow">
     <keyboard-shortcut first-keystroke="alt 4" />
   </action>
