@@ -2,6 +2,8 @@
   <component name="CodeInsightSettings">
     <option name="ADD_UNAMBIGIOUS_IMPORTS_ON_THE_FLY" value="true" />
     <EXCLUDED_PACKAGE NAME="com.gedas.poliks.common.entities" />
+    <EXCLUDED_PACKAGE NAME="org.junit.Assert.assertThrows" />
+    <EXCLUDED_PACKAGE NAME="org.junit.Test" />
   </component>
   <component name="CodeVisionSettings">
     <option name="codeVisionGroupToPosition">
