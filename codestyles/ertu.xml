@@ -1,4 +1,8 @@
 <code_scheme name="ertu" version="173">
+  <Properties>
+    <option name="SPACES_AROUND_KEY_VALUE_DELIMITER" value="true" />
+    <option name="KEEP_BLANK_LINES" value="true" />
+  </Properties>
   <codeStyleSettings language="JAVA">
     <option name="CALL_PARAMETERS_WRAP" value="5" />
   </codeStyleSettings>
