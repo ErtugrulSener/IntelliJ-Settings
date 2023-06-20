@@ -3,6 +3,8 @@
     <option name="ADD_UNAMBIGIOUS_IMPORTS_ON_THE_FLY" value="true" />
     <EXCLUDED_PACKAGE NAME="org.junit.Assert.assertThrows" />
     <EXCLUDED_PACKAGE NAME="org.junit.Test" />
+    <EXCLUDED_PACKAGE NAME="org.mockito.internal.verification.VerificationModeFactory.times" />
+    <EXCLUDED_PACKAGE NAME="org.springframework.test.web.client.ExpectedCount.times" />
   </component>
   <component name="CodeVisionSettings">
     <option name="codeVisionGroupToPosition">
