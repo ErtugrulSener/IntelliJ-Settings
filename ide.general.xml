@@ -10,4 +10,11 @@
     <entry key="idea.coverage.new.test.tracking.enabled" value="false" />
     <entry key="idea.coverage.new.tracing.enabled" value="false" />
   </component>
+  <component name="StatusBar">
+    <option name="widgets">
+      <map>
+        <entry key="FlowJSInfo" value="false" />
+      </map>
+    </option>
+  </component>
 </application>
