@@ -1,0 +1,8 @@
+<application>
+  <component name="ConfigState">
+    <option name="longNum" value="Auto" />
+    <option name="isShowShadeHint" value="false" />
+    <option name="autoRecommendSimilarCode" value="true" />
+    <option name="enableLocalService" value="true" />
+  </component>
+</application>
