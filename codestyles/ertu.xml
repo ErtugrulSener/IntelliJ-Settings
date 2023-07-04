@@ -3,4 +3,7 @@
     <option name="SPACES_AROUND_KEY_VALUE_DELIMITER" value="true" />
     <option name="KEEP_BLANK_LINES" value="true" />
   </Properties>
+  <codeStyleSettings language="JAVA">
+    <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+  </codeStyleSettings>
 </code_scheme>
