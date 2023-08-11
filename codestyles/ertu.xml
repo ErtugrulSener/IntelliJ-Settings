@@ -48,7 +48,6 @@
     </option>
     <option name="IMPORT_LAYOUT_TABLE">
       <value>
-        <package name="" withSubpackages="true" static="true" />
         <emptyLine />
         <package name="java" withSubpackages="true" static="false" />
         <emptyLine />
@@ -59,6 +58,8 @@
         <package name="com" withSubpackages="true" static="false" />
         <emptyLine />
         <package name="" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="" withSubpackages="true" static="true" />
       </value>
     </option>
     <option name="ENABLE_JAVADOC_FORMATTING" value="false" />
