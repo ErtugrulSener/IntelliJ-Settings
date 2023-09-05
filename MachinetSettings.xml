@@ -1,0 +1,52 @@
+<application>
+  <component name="com.github.evgenys91.machinet.common.feedback.FeedbackState">
+    <option name="feedbackDTOByID">
+      <map>
+        <entry key="ProfileMapperTest.java_setUp">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ProfileMapperTest.java" />
+              <option name="myMethodName" value="setUp" />
+              <option name="myCode" value="@BeforeEach&#10;    public void setUp() {&#10;        profileMapper = new ProfileMapper();&#10;    }" />
+              <option name="myGeneratedDate" value="1693899186522" />
+              <option name="myRequestId" value="c07fd4" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ProfileMapperTest.java_testToDTOWhenAllPropertiesSetThenReturnCorrectProfile">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ProfileMapperTest.java" />
+              <option name="myMethodName" value="testToDTOWhenAllPropertiesSetThenReturnCorrectProfile" />
+              <option name="myCode" value="@Test&#10;    public void testToDTOWhenAllPropertiesSetThenReturnCorrectProfile() {&#10;        // Arrange&#10;        Properties properties = new Properties();&#10;        // set all properties&#10;        // ...&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        // assert that all fields in the profile are set correctly&#10;        // ...&#10;    }" />
+              <option name="myGeneratedDate" value="1693899186522" />
+              <option name="myRequestId" value="c07fd4" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ProfileMapperTest.java_testToDTOWhenPropertiesNullThenReturnNullProfile">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ProfileMapperTest.java" />
+              <option name="myMethodName" value="testToDTOWhenPropertiesNullThenReturnNullProfile" />
+              <option name="myCode" value="@Test&#10;    public void testToDTOWhenPropertiesNullThenReturnNullProfile() {&#10;        // Arrange&#10;        Properties properties = null;&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        assertNull(profile);&#10;    }" />
+              <option name="myGeneratedDate" value="1693899186522" />
+              <option name="myRequestId" value="c07fd4" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ProfileMapperTest.java_testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ProfileMapperTest.java" />
+              <option name="myMethodName" value="testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields" />
+              <option name="myCode" value="@Test&#10;    public void testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields() {&#10;        // Arrange&#10;        Properties properties = new Properties();&#10;        // set some properties&#10;        // ...&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        // assert that the fields for the unset properties are null&#10;        // ...&#10;    }" />
+              <option name="myGeneratedDate" value="1693899186522" />
+              <option name="myRequestId" value="c07fd4" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
