@@ -9,6 +9,7 @@
         <option value="com.intellij.kubernetes" />
         <option value="com.jetbrains.jax.ws" />
         <option value="com.jetbrains.jax.ws" />
+        <option value="tech.velocity.jb-cde-plugin" />
       </list>
     </option>
   </component>
