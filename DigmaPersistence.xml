@@ -1,0 +1,8 @@
+<application>
+  <component name="org.digma.intellij.plugin.persistence.PersistenceService">
+    <option name="firstTimePluginLoaded" value="true" />
+    <option name="firstWizardLaunch" value="false" />
+    <option name="localEngineInstalled" value="false" />
+    <option name="userId" value="91c2c10e" />
+  </component>
+</application>
