@@ -1,0 +1,3 @@
+<list display="Save with Spotless" description="Save with Spotless">
+  <action id="com.github.ragurney.spotless.actions.ReformatFileAction" />
+</list>
