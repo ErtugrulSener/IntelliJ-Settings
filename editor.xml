@@ -5,6 +5,7 @@
     <EXCLUDED_PACKAGE NAME="org.junit.Test" />
     <EXCLUDED_PACKAGE NAME="org.mockito.internal.verification.VerificationModeFactory.times" />
     <EXCLUDED_PACKAGE NAME="org.springframework.test.web.client.ExpectedCount.times" />
+    <EXCLUDED_PACKAGE NAME="plx.af.transformation.model" />
   </component>
   <component name="CodeVisionSettings">
     <option name="codeVisionGroupToPosition">
