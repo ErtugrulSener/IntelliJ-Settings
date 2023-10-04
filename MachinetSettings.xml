@@ -2,6 +2,50 @@
   <component name="com.github.evgenys91.machinet.common.feedback.FeedbackState">
     <option name="feedbackDTOByID">
       <map>
+        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PackageUtilsTest.java" />
+              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName" />
+              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service.beschuldigtenvernehmung.model&quot;;&#10;        String expectedContextName = &quot;beschuldigtenvernehmung&quot;;&#10;&#10;        // Act&#10;        String actualContextName = PackageUtils.getContextNameFrom(inputPackage);&#10;&#10;        // Assert&#10;        assertEquals(expectedContextName, actualContextName);&#10;    }" />
+              <option name="myGeneratedDate" value="1696429594276" />
+              <option name="myRequestId" value="23edaf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PackageUtilsTest.java" />
+              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException" />
+              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service.&quot;;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(IllegalArgumentException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
+              <option name="myGeneratedDate" value="1696429594276" />
+              <option name="myRequestId" value="23edaf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PackageUtilsTest.java" />
+              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException" />
+              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service&quot;;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(IllegalArgumentException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
+              <option name="myGeneratedDate" value="1696429594276" />
+              <option name="myRequestId" value="23edaf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PackageUtilsTest.java" />
+              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException" />
+              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException() {&#10;        // Arrange&#10;        String inputPackage = null;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(NullPointerException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
+              <option name="myGeneratedDate" value="1696429594276" />
+              <option name="myRequestId" value="23edaf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
         <entry key="ProfileMapperTest.java_setUp">
           <value>
             <FeedbackDTO>
