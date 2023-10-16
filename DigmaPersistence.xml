@@ -1,11 +1,15 @@
 <application>
   <component name="org.digma.intellij.plugin.persistence.PersistenceService">
     <option name="alreadyPassedTheInstallationWizardForIdeaIDE" value="true" />
+    <option name="currentEnv" value="DESKTOP-L00K1P2[LOCAL]" />
     <option name="firstTimeConnectionEstablished" value="true" />
     <option name="firstTimeConnectionEstablishedTimestamp" value="2023-09-26T17:48:06.222510600Z" />
+    <option name="firstTimeInsightReceived" value="true" />
     <option name="firstTimePerformanceMetrics" value="true" />
     <option name="firstTimePluginLoaded" value="true" />
+    <option name="firstTimeRecentActivityReceived" value="true" />
     <option name="firstWizardLaunch" value="false" />
+    <option name="lastInsightsEventTime" value="2023-10-16T12:56:57.386935Z" />
     <option name="localEngineInstalled" value="false" />
     <option name="noInsightsYetNotificationPassed" value="true" />
     <option name="notificationsStartDate" value="2023-09-25T17:48:11.331606Z" />
