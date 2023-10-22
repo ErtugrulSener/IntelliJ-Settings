@@ -9,5 +9,6 @@
     <option name="INTRODUCE_FIELD_VISIBILITY" value="private" />
     <option name="INTRODUCE_CONSTANT_VISIBILITY" value="public" />
     <option name="RENAME_ACCESSORS" value="false" />
+    <option name="EXTRACT_STATIC_METHOD" value="false" />
   </component>
 </application>
