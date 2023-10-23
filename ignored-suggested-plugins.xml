@@ -7,9 +7,7 @@
         <option value="com.intellij.spring.websocket" />
         <option value="com.haulmont.jpab" />
         <option value="com.intellij.kubernetes" />
-        <option value="com.jetbrains.jax.ws" />
-        <option value="com.jetbrains.jax.ws" />
-        <option value="tech.velocity.jb-cde-plugin" />
+        <option value="io.axoniq.ide.intellij" />
       </list>
     </option>
   </component>

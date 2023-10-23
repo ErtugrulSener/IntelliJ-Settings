@@ -1,0 +1,3 @@
+<list display="Spotless Apply" description="Spotless Apply">
+  <action id="com.github.lipiridi.spotless.applier.action.ReformatFileAction" />
+</list>

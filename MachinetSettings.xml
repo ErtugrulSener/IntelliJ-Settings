@@ -2,91 +2,223 @@
   <component name="com.github.evgenys91.machinet.common.feedback.FeedbackState">
     <option name="feedbackDTOByID">
       <map>
-        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName">
+        <entry key="CoreApplicationTest.java_testMainWhenRunThenPrintBeanNames">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="PackageUtilsTest.java" />
-              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName" />
-              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageContainsBasePackageAndHasContextNameThenReturnCorrectContextName() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service.beschuldigtenvernehmung.model&quot;;&#10;        String expectedContextName = &quot;beschuldigtenvernehmung&quot;;&#10;&#10;        // Act&#10;        String actualContextName = PackageUtils.getContextNameFrom(inputPackage);&#10;&#10;        // Assert&#10;        assertEquals(expectedContextName, actualContextName);&#10;    }" />
-              <option name="myGeneratedDate" value="1696429594276" />
-              <option name="myRequestId" value="23edaf" />
+              <option name="myFileName" value="CoreApplicationTest.java" />
+              <option name="myMethodName" value="testMainWhenRunThenPrintBeanNames" />
+              <option name="myCode" value="@Test&#10;    public void testMainWhenRunThenPrintBeanNames() {&#10;        // Arrange&#10;        String[] beanNames = {&quot;bean1&quot;, &quot;com.bean2&quot;, &quot;bean3&quot;};&#10;        ApplicationContext context = mock(ApplicationContext.class);&#10;        when(context.getBeanDefinitionNames()).thenReturn(beanNames);&#10;        when(SpringApplication.run(CoreApplication.class, new String[] {})).thenReturn(context);&#10;        System.setOut(out);&#10;&#10;        // Act&#10;        CoreApplication.main(new String[] {});&#10;&#10;        // Assert&#10;        verify(out, times(2)).println(captor.capture());&#10;        assertTrue(captor.getAllValues().contains(&quot;bean1&quot;));&#10;        assertTrue(captor.getAllValues().contains(&quot;bean3&quot;));&#10;    }" />
+              <option name="myGeneratedDate" value="1692975712677" />
+              <option name="myRequestId" value="9469e4" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException">
+        <entry key="FinancialReportServiceTest.java_generateReportCallsCorrectDaoMethods">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="PackageUtilsTest.java" />
-              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException" />
-              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageContainsBasePackageButNoContextNameThenThrowIllegalArgumentException() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service.&quot;;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(IllegalArgumentException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
-              <option name="myGeneratedDate" value="1696429594276" />
-              <option name="myRequestId" value="23edaf" />
+              <option name="myFileName" value="FinancialReportServiceTest.java" />
+              <option name="myMethodName" value="generateReportCallsCorrectDaoMethods" />
+              <option name="myCode" value="/**Should call the correct methods in the FinancialDataDao*/&#10;    @Test&#10;    public void generateReportCallsCorrectDaoMethods() {&#10;        FinancialYearSummary financialYearSummary = new FinancialYearSummary();&#10;        FinancialQuarterSummary financialQuarterSummary = new FinancialQuarterSummary();&#10;        FinancialMonthSummary financialMonthSummary = new FinancialMonthSummary();&#10;&#10;        when(financialDataDao.findFinancialYearSummary(2019)).thenReturn(financialYearSummary);&#10;        when(financialDataDao.findFinancialQuarterSummary(2019, 1)).thenReturn(&#10;                financialQuarterSummary);&#10;        when(financialDataDao.findFinancialMonthSummary(2019, 4)).thenReturn(financialMonthSummary);&#10;&#10;        financialReportService.generateReport();&#10;&#10;        verify(financialDataDao, times(1)).findFinancialYearSummary(2019);&#10;        verify(financialDataDao, times(1)).findFinancialQuarterSummary(2019, 1);&#10;        verify(financialDataDao, times(1)).findFinancialMonthSummary(2019, 4);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173005527" />
+              <option name="myRequestId" value="ff8e50" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException">
+        <entry key="FinancialReportServiceTest.java_generateReportCallsCorrectWriterMethods">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="PackageUtilsTest.java" />
-              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException" />
-              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageDoesNotContainBasePackageThenThrowIllegalArgumentException() {&#10;        // Arrange&#10;        String inputPackage = &quot;plx.mci.service&quot;;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(IllegalArgumentException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
-              <option name="myGeneratedDate" value="1696429594276" />
-              <option name="myRequestId" value="23edaf" />
+              <option name="myFileName" value="FinancialReportServiceTest.java" />
+              <option name="myMethodName" value="generateReportCallsCorrectWriterMethods" />
+              <option name="myCode" value="/**Should call the correct methods in the FinancialReportWriter*/&#10;    @Test&#10;    public void generateReportCallsCorrectWriterMethods() {&#10;        FinancialYearSummary financialYearSummary = new FinancialYearSummary();&#10;        FinancialQuarterSummary financialQuarterSummary = new FinancialQuarterSummary();&#10;        FinancialMonthSummary financialMonthSummary = new FinancialMonthSummary();&#10;&#10;        when(financialDataDao.findFinancialYearSummary(2019)).thenReturn(financialYearSummary);&#10;        when(financialDataDao.findFinancialQuarterSummary(2019, 1)).thenReturn(&#10;                financialQuarterSummary);&#10;        when(financialDataDao.findFinancialMonthSummary(2019, 4)).thenReturn(financialMonthSummary);&#10;&#10;        financialReportService.generateReport();&#10;&#10;        verify(financialReportWriter, times(1)).appendFreeText(&#10;                &quot;Year / Quarter / Month Financial Report&quot;);&#10;        verify(financialReportWriter, times(1)).appendFinancialYearSummary(financialYearSummary);&#10;        verify(financialReportWriter, times(1)).appendFinancialQuarterSummary(&#10;                financialQuarterSummary);&#10;        verify(financialReportWriter, times(1)).appendFinancialMonthSummary(financialMonthSummary);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173005527" />
+              <option name="myRequestId" value="ff8e50" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="PackageUtilsTest.java_testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException">
+        <entry key="FinancialReportServiceTest.java_generateReportWithAppendedFreeText">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="PackageUtilsTest.java" />
-              <option name="myMethodName" value="testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException" />
-              <option name="myCode" value="@Test&#10;    public void testGetContextNameFromWhenInputPackageIsNullThenThrowNullPointerException() {&#10;        // Arrange&#10;        String inputPackage = null;&#10;&#10;        // Act &amp; Assert&#10;        assertThrows(NullPointerException.class, () -&gt; PackageUtils.getContextNameFrom(inputPackage));&#10;    }" />
-              <option name="myGeneratedDate" value="1696429594276" />
-              <option name="myRequestId" value="23edaf" />
+              <option name="myFileName" value="FinancialReportServiceTest.java" />
+              <option name="myMethodName" value="generateReportWithAppendedFreeText" />
+              <option name="myCode" value="/**Should append free text to the report*/&#10;    @Test&#10;    public void generateReportWithAppendedFreeText() {&#10;        FinancialYearSummary financialYearSummary = new FinancialYearSummary();&#10;        FinancialQuarterSummary financialQuarterSummary = new FinancialQuarterSummary();&#10;        FinancialMonthSummary financialMonthSummary = new FinancialMonthSummary();&#10;&#10;        when(financialDataDao.findFinancialYearSummary(2019)).thenReturn(financialYearSummary);&#10;        when(financialDataDao.findFinancialQuarterSummary(2019, 1)).thenReturn(&#10;                financialQuarterSummary);&#10;        when(financialDataDao.findFinancialMonthSummary(2019, 4)).thenReturn(financialMonthSummary);&#10;&#10;        financialReportService.generateReport();&#10;&#10;        verify(financialReportWriter, times(1)).appendFreeText(&#10;                &quot;Year / Quarter / Month Financial Report&quot;);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173005527" />
+              <option name="myRequestId" value="ff8e50" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="ProfileMapperTest.java_setUp">
+        <entry key="FinancialReportServiceTest.java_generateReportWithCorrectSummaries">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="ProfileMapperTest.java" />
-              <option name="myMethodName" value="setUp" />
-              <option name="myCode" value="@BeforeEach&#10;    public void setUp() {&#10;        profileMapper = new ProfileMapper();&#10;    }" />
-              <option name="myGeneratedDate" value="1693899186522" />
-              <option name="myRequestId" value="c07fd4" />
+              <option name="myFileName" value="FinancialReportServiceTest.java" />
+              <option name="myMethodName" value="generateReportWithCorrectSummaries" />
+              <option name="myCode" value="/**Should generate a report with correct year, quarter and month summaries*/&#10;    @Test&#10;    public void generateReportWithCorrectSummaries() {&#10;        FinancialYearSummary financialYearSummary = new FinancialYearSummary();&#10;        FinancialQuarterSummary financialQuarterSummary = new FinancialQuarterSummary();&#10;        FinancialMonthSummary financialMonthSummary = new FinancialMonthSummary();&#10;&#10;        when(financialDataDao.findFinancialYearSummary(2019)).thenReturn(financialYearSummary);&#10;        when(financialDataDao.findFinancialQuarterSummary(2019, 1)).thenReturn(&#10;                financialQuarterSummary);&#10;        when(financialDataDao.findFinancialMonthSummary(2019, 4)).thenReturn(financialMonthSummary);&#10;&#10;        financialReportService.generateReport();&#10;&#10;        verify(financialReportWriter, times(1)).appendFreeText(&#10;                &quot;Year / Quarter / Month Financial Report&quot;);&#10;        verify(financialReportWriter, times(1)).appendFinancialYearSummary(financialYearSummary);&#10;        verify(financialReportWriter, times(1)).appendFinancialQuarterSummary(&#10;                financialQuarterSummary);&#10;        verify(financialReportWriter, times(1)).appendFinancialMonthSummary(financialMonthSummary);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173005527" />
+              <option name="myRequestId" value="ff8e50" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="ProfileMapperTest.java_testToDTOWhenAllPropertiesSetThenReturnCorrectProfile">
+        <entry key="PersonServiceTest.java_getPersonsFullNameWhenAllNamePartsAreBlank">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="ProfileMapperTest.java" />
-              <option name="myMethodName" value="testToDTOWhenAllPropertiesSetThenReturnCorrectProfile" />
-              <option name="myCode" value="@Test&#10;    public void testToDTOWhenAllPropertiesSetThenReturnCorrectProfile() {&#10;        // Arrange&#10;        Properties properties = new Properties();&#10;        // set all properties&#10;        // ...&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        // assert that all fields in the profile are set correctly&#10;        // ...&#10;    }" />
-              <option name="myGeneratedDate" value="1693899186522" />
-              <option name="myRequestId" value="c07fd4" />
+              <option name="myFileName" value="PersonServiceTest.java" />
+              <option name="myMethodName" value="getPersonsFullNameWhenAllNamePartsAreBlank" />
+              <option name="myCode" value="@Test&#10;@DisplayName(&quot;Should return empty string when all name parts are blank&quot;)&#10;void getPersonsFullNameWhenAllNamePartsAreBlank() {        PersonEntity person = new PersonEntity();&#10;        person.setFirstName(&quot;&quot;);&#10;        person.setMiddleName(&quot;&quot;);&#10;        person.setLastName(&quot;&quot;);&#10;&#10;        String fullName = personService.getPersonsFullName(person);&#10;&#10;        assertEquals(&quot;&quot;, fullName);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173283618" />
+              <option name="myRequestId" value="faa5cf" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="ProfileMapperTest.java_testToDTOWhenPropertiesNullThenReturnNullProfile">
+        <entry key="PersonServiceTest.java_getPersonsFullNameWhenAllNamePartsArePresent">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="ProfileMapperTest.java" />
-              <option name="myMethodName" value="testToDTOWhenPropertiesNullThenReturnNullProfile" />
-              <option name="myCode" value="@Test&#10;    public void testToDTOWhenPropertiesNullThenReturnNullProfile() {&#10;        // Arrange&#10;        Properties properties = null;&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        assertNull(profile);&#10;    }" />
-              <option name="myGeneratedDate" value="1693899186522" />
-              <option name="myRequestId" value="c07fd4" />
+              <option name="myFileName" value="PersonServiceTest.java" />
+              <option name="myMethodName" value="getPersonsFullNameWhenAllNamePartsArePresent" />
+              <option name="myCode" value="@Test&#10;@DisplayName(&quot;Should return full name when all name parts are present&quot;)&#10;void getPersonsFullNameWhenAllNamePartsArePresent() {        PersonEntity person = new PersonEntity();&#10;        person.setFirstName(&quot;John&quot;);&#10;        person.setMiddleName(&quot;Doe&quot;);&#10;        person.setLastName(&quot;Smith&quot;);&#10;&#10;        String fullName = personService.getPersonsFullName(person);&#10;&#10;        assertEquals(&quot;John Doe Smith&quot;, fullName);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173283618" />
+              <option name="myRequestId" value="faa5cf" />
             </FeedbackDTO>
           </value>
         </entry>
-        <entry key="ProfileMapperTest.java_testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields">
+        <entry key="PersonServiceTest.java_getPersonsFullNameWhenFirstNameAndMiddleNameAreBlank">
           <value>
             <FeedbackDTO>
-              <option name="myFileName" value="ProfileMapperTest.java" />
-              <option name="myMethodName" value="testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields" />
-              <option name="myCode" value="@Test&#10;    public void testToDTOWhenSomePropertiesNotSetThenReturnProfileWithNullFields() {&#10;        // Arrange&#10;        Properties properties = new Properties();&#10;        // set some properties&#10;        // ...&#10;&#10;        // Act&#10;        Profile profile = profileMapper.toDTO(properties);&#10;&#10;        // Assert&#10;        // assert that the fields for the unset properties are null&#10;        // ...&#10;    }" />
-              <option name="myGeneratedDate" value="1693899186522" />
-              <option name="myRequestId" value="c07fd4" />
+              <option name="myFileName" value="PersonServiceTest.java" />
+              <option name="myMethodName" value="getPersonsFullNameWhenFirstNameAndMiddleNameAreBlank" />
+              <option name="myCode" value="@Test&#10;@DisplayName(&quot;Should return only last name when first name and middle name are blank&quot;)&#10;void getPersonsFullNameWhenFirstNameAndMiddleNameAreBlank() {        PersonEntity person = new PersonEntity();&#10;        person.setFirstName(&quot;&quot;);&#10;        person.setMiddleName(&quot;&quot;);&#10;        person.setLastName(&quot;Doe&quot;);&#10;&#10;        String fullName = personService.getPersonsFullName(person);&#10;&#10;        assertEquals(&quot;Doe&quot;, fullName);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173283618" />
+              <option name="myRequestId" value="faa5cf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="PersonServiceTest.java_getPersonsFullNameWhenLastNameAndMiddleNameAreBlank">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PersonServiceTest.java" />
+              <option name="myMethodName" value="getPersonsFullNameWhenLastNameAndMiddleNameAreBlank" />
+              <option name="myCode" value="@Test&#10;@DisplayName(&quot;Should return only first name when last name and middle name are blank&quot;)&#10;void getPersonsFullNameWhenLastNameAndMiddleNameAreBlank() {        PersonEntity person = new PersonEntity();&#10;        person.setFirstName(&quot;John&quot;);&#10;        person.setMiddleName(&quot;&quot;);&#10;        person.setLastName(&quot;&quot;);&#10;&#10;        String fullName = personService.getPersonsFullName(person);&#10;&#10;        assertEquals(&quot;John&quot;, fullName);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173283618" />
+              <option name="myRequestId" value="faa5cf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="PersonServiceTest.java_getPersonsFullNameWhenMiddleNameIsBlank">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="PersonServiceTest.java" />
+              <option name="myMethodName" value="getPersonsFullNameWhenMiddleNameIsBlank" />
+              <option name="myCode" value="@Test&#10;@DisplayName(&quot;Should return full name without middle name when middle name is blank&quot;)&#10;void getPersonsFullNameWhenMiddleNameIsBlank() {        PersonEntity person = new PersonEntity();&#10;        person.setFirstName(&quot;John&quot;);&#10;        person.setMiddleName(&quot;&quot;);&#10;        person.setLastName(&quot;Doe&quot;);&#10;&#10;        String fullName = personService.getPersonsFullName(person);&#10;&#10;        assertEquals(&quot;John Doe&quot;, fullName);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173283618" />
+              <option name="myRequestId" value="faa5cf" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="SpringSecurityAppApplicationTest.java_testMainWhenCalledThenApplicationContextLoads">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="SpringSecurityAppApplicationTest.java" />
+              <option name="myMethodName" value="testMainWhenCalledThenApplicationContextLoads" />
+              <option name="myCode" value="@Test&#10;    public void testMainWhenCalledThenApplicationContextLoads() {&#10;        // Arrange&#10;        String[] args = {};&#10;&#10;        // Act&#10;        ConfigurableApplicationContext context = SpringApplication.run(SpringSecurityAppApplication.class, args);&#10;&#10;        // Assert&#10;        assertNotNull(context);&#10;    }" />
+              <option name="myGeneratedDate" value="1695483887061" />
+              <option name="myRequestId" value="b51f25" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VaultServiceTest.java_getMailPasswordWhenEmailDoesNotExist">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VaultServiceTest.java" />
+              <option name="myMethodName" value="getMailPasswordWhenEmailDoesNotExist" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return null when the email does not exist in the path /emails&quot;)&#10;    void getMailPasswordWhenEmailDoesNotExist() {&#10;        String email = &quot;test@example.com&quot;;&#10;        Map&lt;String, String&gt; emailData = new HashMap&lt;&gt;();&#10;        emailData.put(&quot;john.doe@example.com&quot;, &quot;password123&quot;);&#10;        emailData.put(&quot;jane.doe@example.com&quot;, &quot;password456&quot;);&#10;&#10;        VaultResponseSupport&lt;Map&lt;String, String&gt;&gt; emailsPath = new VaultResponseSupport&lt;&gt;();&#10;        emailsPath.setData(emailData);&#10;&#10;        when(vaultTemplate.opsForKeyValue(&quot;cubbyhole&quot;, KeyValueBackend.KV_1)).thenReturn(&#10;                vaultOperations);&#10;        when(vaultOperations.get(&quot;emails&quot;, (Class&lt;Map&lt;String, String&gt;&gt;) (Class) Map.class)).thenReturn(emailsPath);&#10;&#10;        String password = vaultService.getMailPassword(email);&#10;&#10;        assertNull(password);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173384740" />
+              <option name="myRequestId" value="a1896b" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VaultServiceTest.java_getMailPasswordWhenEmailExists">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VaultServiceTest.java" />
+              <option name="myMethodName" value="getMailPasswordWhenEmailExists" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the password associated with the given email&quot;)&#10;    void getMailPasswordWhenEmailExists() {&#10;        String email = &quot;test@example.com&quot;;&#10;        Map&lt;String, String&gt; emailData = new HashMap&lt;&gt;();&#10;        emailData.put(&quot;test@example.com&quot;, &quot;password123&quot;);&#10;&#10;        VaultResponseSupport&lt;Map&lt;String, String&gt;&gt; emailsPath = new VaultResponseSupport&lt;&gt;();&#10;        emailsPath.setData(emailData);&#10;&#10;        when(vaultTemplate.opsForKeyValue(&quot;cubbyhole&quot;, KeyValueBackend.KV_1)).thenReturn(&#10;                vaultOperations);&#10;        when(vaultOperations.get(&quot;emails&quot;, (Class&lt;Map&lt;String, String&gt;&gt;) (Class) Map.class)).thenReturn(emailsPath);&#10;&#10;        String password = vaultService.getMailPassword(email);&#10;&#10;        assertEquals(&quot;password123&quot;, password);&#10;        verify(vaultTemplate, times(1)).opsForKeyValue(&quot;cubbyhole&quot;, KeyValueBackend.KV_1);&#10;        verify(vaultOperations, times(1)).get(&quot;emails&quot;, (Class&lt;Map&lt;String, String&gt;&gt;) (Class) Map.class);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173384740" />
+              <option name="myRequestId" value="a1896b" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VaultServiceTest.java_getMailPasswordWhenPathEmailsDoesNotExistThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VaultServiceTest.java" />
+              <option name="myMethodName" value="getMailPasswordWhenPathEmailsDoesNotExistThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the path /emails does not exist&quot;)&#10;    void getMailPasswordWhenPathEmailsDoesNotExistThenThrowException() {&#10;        Map&lt;String, String&gt; data = new HashMap&lt;&gt;();&#10;        data.put(&quot;john.doe@example.com&quot;, &quot;password123&quot;);&#10;        data.put(&quot;jane.doe@example.com&quot;, &quot;password456&quot;);&#10;&#10;        VaultResponseSupport&lt;Map&lt;String, String&gt;&gt; emailsPath = new VaultResponseSupport&lt;&gt;();&#10;        emailsPath.setData(data);&#10;&#10;        when(vaultTemplate.opsForKeyValue(&quot;cubbyhole&quot;, KeyValueBackend.KV_1)).thenReturn(&#10;                vaultOperations);&#10;        when(vaultOperations.get(&quot;emails&quot;, (Class&lt;Map&lt;String, String&gt;&gt;) (Class) Map.class)).thenReturn(emailsPath);&#10;&#10;        String email = &quot;test@example.com&quot;;&#10;        assertThrows(IllegalArgumentException.class, () -&gt; vaultService.getMailPassword(email));&#10;&#10;        verify(vaultTemplate, times(1)).opsForKeyValue(&quot;cubbyhole&quot;, KeyValueBackend.KV_1);&#10;        verify(vaultOperations, times(1)).get(&quot;emails&quot;, (Class&lt;Map&lt;String, String&gt;&gt;) (Class) Map.class);&#10;    }" />
+              <option name="myGeneratedDate" value="1691173384740" />
+              <option name="myRequestId" value="a1896b" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionOnBinaryDataThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionOnBinaryDataThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw a RuntimeException when there is an IOException or SQLException while reading document binary data&quot;)&#10;    void attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionOnBinaryDataThenThrowException() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = List.of(new Dokument(UUID.randomUUID(), &quot;document1&quot;, &quot;data1&quot;),&#10;                new Dokument(UUID.randomUUID(), &quot;document2&quot;, &quot;data2&quot;));&#10;&#10;        when(vorgangMapper.getVgObject(any(UUID.class))).thenReturn(new ZeitOrt());&#10;        when(vorgangMapper.createRelation(any(), any(), any(), any(), any())).thenReturn(true);&#10;&#10;        assertThrows(RuntimeException.class, () -&gt; {&#10;            vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente);&#10;        });&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionThenThrowRuntimeException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionThenThrowRuntimeException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw a RuntimeException when there is an IOException or SQLException while reading the binary data&quot;)&#10;    void attachDocumentsToVorgangWhenIOExceptionOrSQLExceptionThenThrowRuntimeException() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = new ArrayList&lt;&gt;();&#10;&#10;        // Create some dummy documents&#10;        Dokument dokument1 = new Dokument();&#10;        dokument1.setUuid(UUID.randomUUID());&#10;        dokument1.setData(getDummyData());&#10;&#10;        Dokument dokument2 = new Dokument();&#10;        dokument2.setUuid(UUID.randomUUID());&#10;        dokument2.setData(getDummyData());&#10;&#10;        dokumente.add(dokument1);&#10;        dokumente.add(dokument2);&#10;&#10;        // Mock the necessary dependencies&#10;        when(vorgangMapper.getVgObject(any(UUID.class))).thenReturn(new ZeitOrt());&#10;        when(vorgangMapper.createRelation(any(), any(), any(), any(), any())).thenReturn(true);&#10;&#10;        // Call the method under test&#10;        assertThrows(RuntimeException.class, () -&gt; vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente));&#10;&#10;        // Verify the interactions&#10;        verify(vorgangMapper, times(2)).getVgObject(any(UUID.class));&#10;        verify(vorgangMapper, times(2)).createRelation(any(), any(), any(), any(), any());&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWhenSQLExceptionOnDataLengthThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWhenSQLExceptionOnDataLengthThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw a RuntimeException when there is a SQLException while getting document data length&quot;)&#10;    void attachDocumentsToVorgangWhenSQLExceptionOnDataLengthThenThrowException() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = List.of(new Dokument());&#10;&#10;        when(vorgangMapper.getVgObject(any(UUID.class))).thenReturn(new ZeitOrt());&#10;        when(vorgangMapper.createRelation(any(), any(), any(), any(), any())).thenReturn(true);&#10;        when(dokument.getData()).thenThrow(new SQLException());&#10;&#10;        assertThrows(RuntimeException.class, () -&gt; vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente));&#10;&#10;        verify(vorgangMapper, times(1)).getVgObject(any(UUID.class));&#10;        verify(vorgangMapper, times(1)).createRelation(any(), any(), any(), any(), any());&#10;        verify(dokument, times(1)).getData();&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWhenSQLExceptionThenThrowRuntimeException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWhenSQLExceptionThenThrowRuntimeException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw a RuntimeException when there is a SQLException while setting ValueBLOBLaenge&quot;)&#10;    void attachDocumentsToVorgangWhenSQLExceptionThenThrowRuntimeException() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = new ArrayList&lt;&gt;();&#10;&#10;        Dokument dokument1 = new Dokument();&#10;        dokument1.setUuid(UUID.randomUUID());&#10;        dokument1.setData(new ByteArrayInputStream(new byte[1024]));&#10;&#10;        Dokument dokument2 = new Dokument();&#10;        dokument2.setUuid(UUID.randomUUID());&#10;        dokument2.setData(new ByteArrayInputStream(new byte[2048]));&#10;&#10;        dokumente.add(dokument1);&#10;        dokumente.add(dokument2);&#10;&#10;        when(vorgangMapper.getVgObject(any(UUID.class))).thenReturn(new ZeitOrt());&#10;&#10;        assertThrows(RuntimeException.class, () -&gt; {&#10;            vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente);&#10;        });&#10;&#10;        verify(vorgangMapper, times(2)).getVgObject(any(UUID.class));&#10;        verify(vorgangMapper, times(2)).createRelation(any(), any(), any(), any(), any());&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWithValidData">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWithValidData" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should attach documents to Vorgang without any exceptions when all data is valid&quot;)&#10;    void attachDocumentsToVorgangWithValidData() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = List.of(new Dokument(UUID.randomUUID(), &quot;document1&quot;, &quot;data1&quot;),&#10;                new Dokument(UUID.randomUUID(), &quot;document2&quot;, &quot;data2&quot;));&#10;&#10;        vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente);&#10;&#10;        assertThat(vorgang.getDokumentAsList()).hasSize(2);&#10;        assertThat(vorgang.getDokumentAsList().get(0).getValueBlobFolgt()).isFalse();&#10;        assertThat(vorgang.getDokumentAsList().get(0).isExterneErzeugung()).isFalse();&#10;        assertThat(vorgang.getDokumentAsList().get(0).getValueReferenzID()).isNotNull();&#10;        assertThat(vorgang.getDokumentAsList().get(0).getValueBLOBLaenge()).isEqualTo(&quot;data1&quot;.length());&#10;        assertThat(vorgang.getDokumentAsList().get(0).getBLOBLaenge().getBinary()).isEqualTo(&quot;data1&quot;.getBytes());&#10;        assertThat(vorgang.getDokumentAsList().get(1).getValueBlobFolgt()).isFalse();&#10;        assertThat(vorgang.getDokumentAsList().get(1).isExterneErzeugung()).isFalse();&#10;        assertThat(vorgang.getDokumentAsList().get(1).getValueReferenzID()).isNotNull();&#10;        assertThat(vorgang.getDokumentAsList().get(1).getValueBLOBLaenge()).isEqualTo(&quot;data2&quot;.length());&#10;        assertThat(vorgang.getDokumentAsList().get(1).getBLOBLaenge().getBinary()).isEqualTo(&quot;data2&quot;.getBytes());&#10;&#10;        verify(vorgangMapper, times(2)).getVgObject(any(UUID.class));&#10;        verify(vorgangMapper, times(2)).createRelation(any(Class.class), any(VgObject.class), any(VgObject.class),&#10;                eq(globalerKontext), eq(initialerKontext));&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="VorgangUtilServiceTest.java_attachDocumentsToVorgangWithoutExceptions">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="VorgangUtilServiceTest.java" />
+              <option name="myMethodName" value="attachDocumentsToVorgangWithoutExceptions" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should attach documents to Vorgang without any exceptions&quot;)&#10;    void attachDocumentsToVorgangWithoutExceptions() {&#10;        Vorgang vorgang = new Vorgang();&#10;        List&lt;Dokument&gt; dokumente = List.of(new Dokument(UUID.randomUUID(), &quot;document1&quot;, &quot;data1&quot;),&#10;                new Dokument(UUID.randomUUID(), &quot;document2&quot;, &quot;data2&quot;));&#10;&#10;        vorgangUtilService.attachDocumentsToVorgang(vorgang, dokumente);&#10;&#10;        // Assertions or verifications can be added here&#10;    }" />
+              <option name="myGeneratedDate" value="1691837931975" />
+              <option name="myRequestId" value="9d0582" />
             </FeedbackDTO>
           </value>
         </entry>

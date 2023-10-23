@@ -1,0 +1,34 @@
+<keymap version="1" name="Custom++" parent="$default">
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+  </action>
+  <action id="CodeWhispererRecommendationAction" />
+  <action id="EditorDeleteLine">
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="alt e" />
+  </action>
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
+  <action id="ExpressionTypeInfo">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
+  <action id="GotoAction">
+    <keyboard-shortcut first-keystroke="shift ctrl p" />
+  </action>
+  <action id="IntroduceParameterObject">
+    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
+  </action>
+  <action id="NewClass">
+    <keyboard-shortcut first-keystroke="alt c" />
+  </action>
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="alt f" />
+  </action>
+  <action id="UsageFiltering.WriteAccess" />
+</keymap>

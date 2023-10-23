@@ -1,6 +1,5 @@
 <application>
   <component name="MyApplicationService">
-    <option name="capabilities" value="1" />
     <option name="onboarded" value="true" />
   </component>
 </application>
