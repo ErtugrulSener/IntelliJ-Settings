@@ -15,9 +15,6 @@
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="alt e" />
   </action>
-  <action id="RevealIn">
-    <keyboard-shortcut first-keystroke="alt r" />
-  </action>
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
@@ -45,6 +42,9 @@
   </action>
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />
+  </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="UsageFiltering.WriteAccess" />
   <action id="Vcs.Log.ShowTooltip">
