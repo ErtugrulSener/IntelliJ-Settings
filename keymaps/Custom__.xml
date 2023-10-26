@@ -18,6 +18,7 @@
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
+  <action id="ExportToTextFile" />
   <action id="ExpressionTypeInfo">
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
