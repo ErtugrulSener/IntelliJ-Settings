@@ -3,20 +3,33 @@
     <keyboard-shortcut first-keystroke="ctrl w" />
   </action>
   <action id="CodeWhispererRecommendationAction" />
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="ctrl q" />
+  </action>
+  <action id="CompileProject">
+    <keyboard-shortcut first-keystroke="shift ctrl comma" />
+  </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="alt e" />
   </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
+  <action id="ExportToTextFile" />
   <action id="ExpressionTypeInfo">
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
+  </action>
+  <action id="GuiDesigner.QuickJavadoc">
+    <mouse-shortcut keystroke="alt button2" />
   </action>
   <action id="IntroduceParameterObject">
     <keyboard-shortcut first-keystroke="shift ctrl alt o" />
@@ -30,5 +43,11 @@
   <action id="NewFile">
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
+  <action id="QuickJavaDoc">
+    <mouse-shortcut keystroke="alt button2" />
+  </action>
   <action id="UsageFiltering.WriteAccess" />
+  <action id="Vcs.Log.ShowTooltip">
+    <mouse-shortcut keystroke="alt button2" />
+  </action>
 </keymap>
