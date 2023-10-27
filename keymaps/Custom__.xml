@@ -15,6 +15,9 @@
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="alt e" />
   </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
   <action id="EditorUnSelectWord">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
