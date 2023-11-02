@@ -93,22 +93,22 @@
     </filter>
     <filter>
       <option name="PATTERN" value="org.springframework.aop.*" />
-      <option name="ENABLED" value="true" />
+      <option name="ENABLED" value="false" />
       <option name="INCLUDE" value="true" />
     </filter>
     <filter>
       <option name="PATTERN" value="org.apache.*" />
-      <option name="ENABLED" value="true" />
+      <option name="ENABLED" value="false" />
       <option name="INCLUDE" value="true" />
     </filter>
     <filter>
       <option name="PATTERN" value="ch.qos.*" />
-      <option name="ENABLED" value="true" />
+      <option name="ENABLED" value="false" />
       <option name="INCLUDE" value="true" />
     </filter>
     <filter>
       <option name="PATTERN" value="io.micrometer.*" />
-      <option name="ENABLED" value="true" />
+      <option name="ENABLED" value="false" />
       <option name="INCLUDE" value="true" />
     </filter>
   </component>
