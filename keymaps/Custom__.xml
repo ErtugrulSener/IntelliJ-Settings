@@ -53,4 +53,7 @@
   <action id="Vcs.Log.ShowTooltip">
     <mouse-shortcut keystroke="alt button2" />
   </action>
+  <action id="com.github.ragurney.spotless.actions.ReformatAllFilesAction">
+    <keyboard-shortcut first-keystroke="alt a" />
+  </action>
 </keymap>
