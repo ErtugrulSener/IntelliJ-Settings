@@ -1,10 +1,5 @@
 <application>
   <component name="CoverSettingsConfig">
-    <option name="classNameTemplate" value="${CLASS_NAME}Test" />
     <option name="collectAnalytics" value="false" />
-    <option name="currentInliningOption" value="CUSTOM" />
-    <option name="keepTestsWithoutAssertions" value="false" />
-    <option name="sandboxingEnabled" value="false" />
-    <option name="showComments" value="true" />
   </component>
 </application>
