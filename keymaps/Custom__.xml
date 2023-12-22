@@ -43,6 +43,12 @@
   <action id="NewDir">
     <keyboard-shortcut first-keystroke="alt p" />
   </action>
+  <action id="NewElement">
+    <keyboard-shortcut first-keystroke="alt c" />
+  </action>
+  <action id="NewElementSamePlace">
+    <keyboard-shortcut first-keystroke="ctrl alt c" />
+  </action>
   <action id="NewFile">
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
