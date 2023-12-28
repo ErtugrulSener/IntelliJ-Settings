@@ -1,4 +1,7 @@
 <keymap version="1" name="Custom++" parent="$default">
+  <action id="BuildWholeSolutionAction">
+    <keyboard-shortcut first-keystroke="ctrl comma" />
+  </action>
   <action id="CheckForUpdate">
     <keyboard-shortcut first-keystroke="alt u" />
   </action>
@@ -54,6 +57,9 @@
   </action>
   <action id="QuickJavaDoc">
     <mouse-shortcut keystroke="alt button2" />
+  </action>
+  <action id="RebuildSolutionAction">
+    <keyboard-shortcut first-keystroke="ctrl alt comma" />
   </action>
   <action id="RevealIn">
     <keyboard-shortcut first-keystroke="alt r" />
