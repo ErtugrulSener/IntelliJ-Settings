@@ -1,4 +1,7 @@
 <keymap version="1" name="Custom++" parent="$default">
+  <action id="BuildWholeSolutionAction">
+    <keyboard-shortcut first-keystroke="ctrl comma" />
+  </action>
   <action id="CheckForUpdate">
     <keyboard-shortcut first-keystroke="alt u" />
   </action>
