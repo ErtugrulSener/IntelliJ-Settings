@@ -6,6 +6,5 @@
     <variable name="METADATA_KEY" expression="" defaultValue="&quot;Key&quot;" alwaysStopAt="true" />
     <variable name="METADATA_VALUE" expression="" defaultValue="&quot;Value&quot;" alwaysStopAt="true" />
     <variable name="REQUEST_BODY" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
 </templateSet>
