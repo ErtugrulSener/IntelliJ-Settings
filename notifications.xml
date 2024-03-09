@@ -1,0 +1,5 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Build Messages" shouldLog="false" />
+  </component>
+</application>
