@@ -9,6 +9,7 @@
         <option value="com.intellij.kubernetes" />
         <option value="io.axoniq.ide.intellij" />
         <option value="org.strangeway.vaadin" />
+        <option value="com.intellij.aqua" />
       </list>
     </option>
   </component>
