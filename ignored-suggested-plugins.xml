@@ -8,6 +8,7 @@
         <option value="com.haulmont.jpab" />
         <option value="com.intellij.kubernetes" />
         <option value="io.axoniq.ide.intellij" />
+        <option value="org.strangeway.vaadin" />
       </list>
     </option>
   </component>
