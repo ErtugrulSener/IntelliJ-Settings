@@ -124,7 +124,7 @@
   </component>
   <component name="XDebuggerSettings">
     <data-views>
-      <option name="showLibraryStackFrames" value="false" />
+      <option name="showLibraryStackFrames" value="true" />
     </data-views>
     <general />
     <debuggers>
