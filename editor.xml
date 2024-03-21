@@ -13,7 +13,6 @@
     <EXCLUDED_PACKAGE NAME="org.assertj.core.api.Java6Assertions" />
     <EXCLUDED_PACKAGE NAME="org.assertj.core.api.JavaAssertions" />
     <EXCLUDED_PACKAGE NAME="org.hamcrest" />
-    <EXCLUDED_PACKAGE NAME="org.junit" />
     <EXCLUDED_PACKAGE NAME="org.mockito.internal.verification.VerificationModeFactory.times" />
     <EXCLUDED_PACKAGE NAME="org.springframework.test.web.client.ExpectedCount.times" />
     <EXCLUDED_PACKAGE NAME="org.testcontainers.shaded.org.hamcrest.MatcherAssert.assertThat" />
