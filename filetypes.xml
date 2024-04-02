@@ -6,13 +6,13 @@
       <mapping ext="txt" type="GraphQL" />
       <mapping ext="env" type="PLAIN_TEXT" />
       <mapping ext="pem" type="PLAIN_TEXT" />
-      <mapping ext="plantuml" type="PlantUML file" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
       <removed_mapping ext="inputactions" approved="true" type="JSON" />
       <removed_mapping ext="pdf" approved="true" type="Native" />
       <removed_mapping ext="psd" approved="true" type="Image" />
       <removed_mapping ext="tps" approved="true" type="XML" />
       <removed_mapping ext="txt" approved="true" type="PLAIN_TEXT" />
+      <mapping ext="plantuml" type="PlantUML file" />
     </extensionMap>
   </component>
 </application>
