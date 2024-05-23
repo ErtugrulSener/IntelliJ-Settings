@@ -1,0 +1,16 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="com.intellij.javaee.jpa" />
+        <option value="com.netflix.graphql.dgs.intellijplugin" />
+        <option value="com.intellij.spring.websocket" />
+        <option value="com.haulmont.jpab" />
+        <option value="com.intellij.kubernetes" />
+        <option value="io.axoniq.ide.intellij" />
+        <option value="org.strangeway.vaadin" />
+        <option value="com.intellij.aqua" />
+      </list>
+    </option>
+  </component>
+</application>

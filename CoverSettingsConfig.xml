@@ -1,0 +1,11 @@
+<application>
+  <component name="CoverSettingsConfig">
+    <option name="classNameTemplate" value="${CLASS_NAME}Test" />
+    <option name="collectAnalytics" value="false" />
+    <option name="currentInliningOption" value="CUSTOM" />
+    <option name="inlineActIntoAssert" value="false" />
+    <option name="inlineArrangeIntoAct" value="false" />
+    <option name="showComments" value="true" />
+    <option name="springIntegrationTestsEnabled" value="true" />
+  </component>
+</application>
