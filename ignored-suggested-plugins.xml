@@ -10,6 +10,7 @@
         <option value="io.axoniq.ide.intellij" />
         <option value="org.strangeway.vaadin" />
         <option value="com.intellij.aqua" />
+        <option value="Pythonid" />
       </list>
     </option>
   </component>
