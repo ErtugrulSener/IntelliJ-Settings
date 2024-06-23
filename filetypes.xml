@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="compressed_with_zlib" type="AUTO_DETECTED" />
       <mapping pattern="CODEOWNERS" type="AUTO_DETECTED" />
+      <mapping ext="txt" type="GraphQL" />
       <mapping ext="env" type="PLAIN_TEXT" />
       <mapping ext="pem" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
@@ -11,7 +12,7 @@
       <removed_mapping ext="psd" approved="true" type="Image" />
       <removed_mapping ext="tps" approved="true" type="XML" />
       <removed_mapping ext="txt" approved="true" type="PLAIN_TEXT" />
-      <mapping ext="txt" type="GraphQL" />
+      <mapping ext="plantuml" type="PlantUML file" />
     </extensionMap>
   </component>
 </application>

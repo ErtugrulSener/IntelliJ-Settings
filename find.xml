@@ -15,5 +15,7 @@
     <mask>*.java</mask>
     <mask>*.cpp</mask>
     <mask>*.cpp,*.h,*.c,*.hpp,*.cc</mask>
+    <mask>*.gradle</mask>
+    <mask>*.graphql</mask>
   </component>
 </application>
