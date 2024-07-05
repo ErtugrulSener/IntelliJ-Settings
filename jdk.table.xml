@@ -6,11 +6,6 @@
       <version value="java version &quot;17.0.8&quot;" />
       <homePath value="$USER_HOME$/.jdks/temurin-17.0.8.1" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/resources/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt://$USER_HOME$/.jdks/temurin-17.0.8.1!/java.base" type="simple" />
@@ -86,9 +81,6 @@
             <root url="jrt://$USER_HOME$/.jdks/temurin-17.0.8.1!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://$USER_HOME$/.jdks/temurin-17.0.8.1/lib/src.zip!/java.se" type="simple" />
@@ -172,11 +164,6 @@
       <version value="java version &quot;11.0.2&quot;" />
       <homePath value="C:/Software/apps/openjdk11/current" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/resources/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt://C:/Software/apps/openjdk11/current!/java.base" type="simple" />
@@ -252,9 +239,6 @@
             <root url="jrt://C:/Software/apps/openjdk11/current!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://C:/Software/apps/openjdk11/current/lib/src.zip!/java.se" type="simple" />
@@ -337,15 +321,9 @@
       <type value="KotlinSDK" />
       <homePath value="" />
       <roots>
-        <annotationsPath>
-          <root type="composite" />
-        </annotationsPath>
         <classPath>
           <root type="composite" />
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite" />
         </sourcePath>
@@ -357,11 +335,6 @@
       <version value="Oracle OpenJDK 21" />
       <homePath value="$USER_HOME$/.jdks/openjdk-21" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/resources/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt://$USER_HOME$/.jdks/openjdk-21!/java.base" type="simple" />
@@ -436,9 +409,6 @@
             <root url="jrt://$USER_HOME$/.jdks/openjdk-21!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://$USER_HOME$/.jdks/openjdk-21/lib/src.zip!/java.se" type="simple" />
@@ -521,11 +491,6 @@
       <version value="Eclipse Temurin 17.0.8" />
       <homePath value="$USER_HOME$/.jdks/temurin-17.0.8.1" />
       <roots>
-        <annotationsPath>
-          <root type="composite">
-            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/resources/jdkAnnotations.jar!/" type="simple" />
-          </root>
-        </annotationsPath>
         <classPath>
           <root type="composite">
             <root url="jrt://$USER_HOME$/.jdks/temurin-17.0.8.1!/java.base" type="simple" />
@@ -601,9 +566,6 @@
             <root url="jrt://$USER_HOME$/.jdks/temurin-17.0.8.1!/jdk.zipfs" type="simple" />
           </root>
         </classPath>
-        <javadocPath>
-          <root type="composite" />
-        </javadocPath>
         <sourcePath>
           <root type="composite">
             <root url="jar://$USER_HOME$/.jdks/temurin-17.0.8.1/lib/src.zip!/java.se" type="simple" />
