@@ -1,0 +1,17 @@
+<application>
+  <component name="GlobalSettings">
+    <option name="serverConfig">
+      <ServerConfigImpl>
+        <option name="url" value="https://artifactory.devops.telekom.de/" />
+        <option name="xrayUrl" value="https://artifactory.devops.telekom.de/xray" />
+        <option name="artifactoryUrl" value="https://artifactory.devops.telekom.de/artifactory" />
+        <policyType>VULNERABILITIES</policyType>
+        <option name="project" value="" />
+        <option name="watches" value="" />
+        <excludedPaths>**/*{.idea,test,node_modules}*</excludedPaths>
+        <connectionRetries>3</connectionRetries>
+        <connectionTimeout>300</connectionTimeout>
+      </ServerConfigImpl>
+    </option>
+  </component>
+</application>
