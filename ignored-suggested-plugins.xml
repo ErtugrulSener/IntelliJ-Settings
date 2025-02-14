@@ -12,6 +12,7 @@
         <option value="com.intellij.aqua" />
         <option value="Pythonid" />
         <option value="DevKit" />
+        <option value="com.intellij.spring.websocket" />
       </list>
     </option>
   </component>

@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="ldb" value="localDeveloperBuild-SNAPSHOT" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
