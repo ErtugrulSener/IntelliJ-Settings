@@ -3,8 +3,8 @@
     <option name="enabledLanguages">
       <set>
         <option value="English (US)" />
-        <option value="German (Germany)" />
         <option value="Breton" />
+        <option value="German (Germany)" />
       </set>
     </option>
   </component>
