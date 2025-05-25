@@ -11,6 +11,7 @@
     <entry key="idea.coverage.new.test.tracking.enabled" value="false" source="SYSTEM" />
     <entry key="idea.coverage.new.tracing.enabled" value="false" source="SYSTEM" />
     <entry key="terminal.new.ui" value="true" source="SYSTEM" />
+    <entry key="rdclient.patch.engine.enabled" value="false" source="SYSTEM" />
   </component>
   <component name="StatusBar">
     <option name="widgets">
