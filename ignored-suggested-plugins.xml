@@ -13,6 +13,7 @@
         <option value="Pythonid" />
         <option value="DevKit" />
         <option value="com.intellij.spring.websocket" />
+        <option value="com.jetbrains.jax.ws" />
       </list>
     </option>
   </component>
