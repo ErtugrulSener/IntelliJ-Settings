@@ -1,0 +1,9 @@
+<application>
+  <component name="DoNotAskAppManager">
+    <option name="idToDisplayName">
+      <map>
+        <entry key="File type conflict" value="File type conflict detected" />
+      </map>
+    </option>
+  </component>
+</application>
