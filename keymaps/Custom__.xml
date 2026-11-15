@@ -1,4 +1,5 @@
 <keymap version="1" name="Custom++" parent="$default">
+  <action id="ActivateBookmarksToolWindow" />
   <action id="BuildWholeSolutionAction">
     <keyboard-shortcut first-keystroke="ctrl comma" />
   </action>
@@ -70,6 +71,7 @@
   <action id="RevealIn">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="RunAnything" />
   <action id="UsageFiltering.WriteAccess" />
   <action id="Vcs.Log.ShowTooltip">
     <mouse-shortcut keystroke="alt button2" />

@@ -55,5 +55,6 @@
         </entry>
       </map>
     </option>
+    <option name="autoUpdateLanguages" value="true" />
   </component>
 </application>
