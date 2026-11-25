@@ -1,0 +1,6 @@
+<application>
+  <component name="com.github.lipiridi.spotless.applier.ui.settings.SpotlessSettingsState">
+    <option name="allowGradleCache" value="true" />
+    <option name="optimizeImportsBeforeApplying" value="true" />
+  </component>
+</application>
