@@ -1,3 +1,0 @@
-<list display="Spotless Apply" description="Spotless Apply">
-  <action id="com.github.ragurney.spotless.actions.ReformatFileAction" />
-</list>

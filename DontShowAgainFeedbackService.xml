@@ -1,4 +1,10 @@
 <application>
   <component name="DontShowAgainFeedbackService"><![CDATA[{
+  "dontShowAgainIdeVersions": [
+    "2024.1",
+    "2024.3",
+    "2025.2",
+    "2026.3"
+  ]
 }]]></component>
 </application>

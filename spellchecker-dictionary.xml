@@ -4,9 +4,11 @@
       <w>af's</w>
       <w>afmapper</w>
       <w>anwendungsfaelle</w>
+      <w>battlepass</w>
       <w>beschuldigternvernehmung</w>
       <w>binaerdaten</w>
       <w>blobanalyse</w>
+      <w>buyed</w>
       <w>convertermodel</w>
       <w>definitionmodel</w>
       <w>dto's</w>
@@ -15,13 +17,16 @@
       <w>erfassungs</w>
       <w>ertu</w>
       <w>ertugrul</w>
+      <w>flagname</w>
       <w>gedas</w>
       <w>geschaedigte</w>
       <w>guelltig</w>
       <w>gueltig</w>
       <w>infering</w>
+      <w>informations</w>
       <w>initialesereignis</w>
       <w>initialier</w>
+      <w>itemshop</w>
       <w>kardinalitaet</w>
       <w>katalogbasiert</w>
       <w>katalogunterstuetzt</w>
@@ -33,6 +38,7 @@
       <w>nevertell</w>
       <w>npe's</w>
       <w>persister</w>
+      <w>persoenliche</w>
       <w>personstaatsangehoerigkeit</w>
       <w>plxgds</w>
       <w>plxkrds</w>
@@ -44,12 +50,16 @@
       <w>relationlist</w>
       <w>sener</w>
       <w>seperators</w>
+      <w>skillslot</w>
       <w>spezialfaelle</w>
       <w>spqr</w>
       <w>tatortbericht</w>
       <w>tatverdaechtiger</w>
+      <w>verhaeltnisse</w>
       <w>vernehmungsbeginn</w>
       <w>vernehmungsende</w>
+      <w>vnum</w>
+      <w>vnums</w>
       <w>wgoethe</w>
       <w>xoxo</w>
     </words>
